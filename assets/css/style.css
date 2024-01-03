@@ -30,7 +30,14 @@ h1{
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 5px;
-    color: var(--color01);   
+    color: var(--color01);    
+}
+h2{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--color01);
+    letter-spacing: 2px;
+
 }
 nav ul{
     display:flex;
@@ -63,7 +70,78 @@ nav a:hover{
 
     
     width: 400px;
-    height: 300px;
-    background-color: aquamarine;
-    ;
+    border-left: 2px solid var(--color01);
+    padding-left: 2rem;
+    color: var(--color01);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 2rem;
+}
+
+#info_header p{
+    
+    font-size: 1.1rem;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+
+}
+.boton{
+    background-color: var(--color01);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.boton span{
+    color: var(--color03);
+    transition: 0.5s;
+}
+.boton span:hover{
+    color:var(--color02)
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+article{
+    width: 100%;
+
+}
+#articulo_fortalezas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    transform: translateY(-30px)
+
+}
+.fortalezas{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 1rem;
+    text-align: center;
+
+}
+.fortalezas h4{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.fortalezas img{
+    width: 100px;
+    background-color: var(--color02);
+    border-radius: 50%;
+    padding: 10px;
+
 }
