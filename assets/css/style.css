@@ -3,6 +3,7 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root{
@@ -28,17 +29,28 @@ nav{
 }
 h1{
     font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 5px;
     color: var(--color01);    
 }
-h2{
+.h2Tipo1{
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
     color:var(--color01);
     letter-spacing: 2px;
-
 }
+.h2Tipo2{
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--color03)
+}
+.h2Tipo3{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--color03);
+}
+h3{
+    font-size: 2.3rem;
+}
+
 nav ul{
     display:flex;
     flex-direction: row;
@@ -49,8 +61,7 @@ nav ul{
 }
 a{
     text-decoration: none;
-    color:inherit;
-    
+    color:inherit;   
 }
 nav a{
     color: var(--color01);
@@ -58,8 +69,7 @@ nav a{
     transition: 0.5s;
 }
 nav a:hover{
-    color:var(--color02);
-    
+    color:var(--color02);   
 }
 /* estilos del header */
 #info_header{
@@ -73,7 +83,6 @@ nav a:hover{
     border-left: 2px solid var(--color01);
     padding-left: 2rem;
     color: var(--color01);
-    font-family: Arial, Helvetica, sans-serif;
     
     display: flex;
     flex-direction: column;
@@ -135,13 +144,44 @@ article{
 }
 .fortalezas h4{
     font-size: 1.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    
 }
 .fortalezas img{
     width: 100px;
     background-color: var(--color02);
     border-radius: 50%;
     padding: 10px;
+}
 
+/* estilos del estilo about */
+#articulo_about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+#articulo_about >img{
+    width: 40%;
+}
+#caja_about{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#caja_about h3{
+    width: 100%;
+    border-bottom: 1px solid var(--color02);
+    padding: 1.5rem;
+}
+#caja_about h2{
+    padding-left: 1.5rem;
+}
+#caja_about p{
+    padding: 0 1.5rem;
+}
+#caja_about a{
+    padding-left: 1.5rem;
+    color: var(--color02);
 }
