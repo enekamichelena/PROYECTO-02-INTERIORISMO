@@ -10,25 +10,18 @@
     --color01:white;
     --color02:rgb(255, 99, 99);
     --color03:rgb(57,57,57);
+    --color04:rgb(43, 159, 237);
 }
+/* estilos genericos */
 
-/* estilos del nav */
-nav{
-    position: fixed;
-    top:0;
-    width: 100%;
-    height: 10vh;
-    z-index: 150;
-    
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 1rem 2rem;
-}
-h1{
+.anchoEstrecho{
+    width: 95%;
+    max-width: 800px;
+ }
+ .esconder{
+     display: none!important;
+ }
+ h1{
     font-size: 2.5rem;
     letter-spacing: 5px;
     color: var(--color01);    
@@ -51,7 +44,55 @@ h1{
 h3{
     font-size: 2.3rem;
 }
+.colorespecial{
+    color: var(--color04)!important;
+    transition: 0.5s;
+}
+.colorespecial2{
+    color: var(--color02)!important;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color:inherit;   
+}
+.boton{
+    background-color: var(--color01);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.boton span{
+    color: var(--color03);
+    transition: 0.5s;
+}
+.boton span:hover{
+    color:var(--color02)
+}
+.rotar{
+    transform: rotate(0deg);
+    transition: 3s ease-in-out;
+}
+.rotar:hover{
+    transform: rotate(360deg);
+}
 
+/* estilos del nav */
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 10vh;
+    z-index: 150;
+    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+}
 nav ul{
     display:flex;
     flex-direction: row;
@@ -59,10 +100,6 @@ nav ul{
     align-items: center;
     column-gap: 2rem;
     list-style: none;
-}
-a{
-    text-decoration: none;
-    color:inherit;   
 }
 nav a{
     color: var(--color01);
@@ -85,7 +122,6 @@ header img{
     height: 100%;
     object-fit: cover;
 }
-
 #info_header{
     position: absolute;
     top: 50%;
@@ -104,28 +140,11 @@ header img{
     justify-content: flex-start;
     row-gap: 2rem;
 }
-
-#info_header p{
-    
+#info_header p{    
     font-size: 1.1rem;
     line-height: 2rem;
     letter-spacing: 1.5px;
-
 }
-.boton{
-    background-color: var(--color01);
-    padding: 1rem 3rem;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-.boton span{
-    color: var(--color03);
-    transition: 0.5s;
-}
-.boton span:hover{
-    color:var(--color02)
-}
-
 section{
     width: 100%;
     margin: 2rem;
@@ -137,13 +156,18 @@ section{
 article{
     width: 100%;
     margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
 }
 #articulo_fortalezas{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: start;
-    transform: translateY(-51px)
+    transform: translateY(-118px)
 
 }
 .fortalezas{
@@ -201,21 +225,6 @@ article{
 }
 
 /* ESTILOS SECCION PROYECTOS */
-#articulo_proyectos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    row-gap: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.anchoEstrecho{
-   width: 95%;
-   max-width: 800px;
-}
-.esconder{
-    display: none!important;
-}
 
 #caja_proyectos{
     width: 100%;
@@ -244,14 +253,7 @@ article{
     font-weight: 100;
 }
 /* SECCION CLIENTES */
-#articuloClientes{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    row-gap: 2rem;
-}
+
 #contenedorClientes{
     width: 100%;
     display: flex;
@@ -291,4 +293,32 @@ article{
     right: -1rem;
     background-color: var(--color01);
     padding: 0.3rem;
+}
+/* ESTILOS SECCION NUESTROS TRABAJADORES */
+.contenedorenfila{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.trabajador{
+    width: 23%;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 0.5rem;
+}
+.trabajador img{
+    width: 100%;
+    border-radius: 2rem;
+    transition: 0.5s;   
+}
+.trabajador img:hover{
+    filter: sepia(0.5);
 }
